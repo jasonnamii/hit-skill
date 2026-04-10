@@ -1,5 +1,7 @@
 # hit-skill
 
+> 🇰🇷 [한국어 README](./README.ko.md)
+
 **Three-layer transformation engine: human mechanisms, stimulus design, and propagation structures.**
 
 ## Prerequisites
