@@ -2,6 +2,10 @@
 
 **Three-layer transformation engine: human mechanisms, stimulus design, and propagation structures.**
 
+## Prerequisites
+
+- **Claude Cowork or Claude Code** environment
+
 ## Goal
 
 Hit-skill solves the fundamental problem of designing for human impact. It provides a structured engine that layers scientific mechanisms of human behavior (Layer 1: why people react), stimulus design formulas (Layer 2: what to throw and how), and propagation dynamics (Layer 3: how it spreads). It bridges behavioral science and practical execution.
