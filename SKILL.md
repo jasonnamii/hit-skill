@@ -1,28 +1,16 @@
 ---
 name: hit-skill
-description: "히트 패턴 아키텍처 3층(인간메커니즘·자극설계·전파구조) 기반 범용 변환 엔진. 진단·설계·변환 3모드. 작업물/고민을 통과시키면 인간특성+히트패턴이 반영된 결과물로 탈바꿈. 6소스 16축(카너먼7+치알디니3+SDT2+진화2+감정1+행동1)+13메타원리, 자극설계 6공식+5전제조건(V1~V5), 전파 5축+E전파정량모델+팬덤가속+다채널전파+ZM포화보정 통합. 6도메인×33세부도메인 어댑터+하이브리드/트리플 매트릭스."
+description: |
+  히트 패턴 아키텍처 3층(인간메커니즘·자극설계·전파구조) 기반 범용 변환 엔진. 진단·설계·변환 3모드. 작업물을 통과시키면 히트패턴이 반영된 결과물로 탈바꿈.
+  P1: 히트스킬, hit skill, 히트패턴, 히트분석, 자극설계, 인간메커니즘, 히트변환, 히트진단.
+  P2: 히트스킬 통과, 히트 관점으로, 반응하게 만들어, 변환해줘, 진단해줘.
+  P3: hit pattern, human mechanism, stimulus design, propagation structure.
+  P5: 진단결과로, 설계안으로, 변환결과로.
+  NOT: 일반리서치(→research-frame), 재무모델(→financial-model), UI설계(→ui-action-designer).
 "@uses":
   - references/layer1-mechanism.md
   - references/layer2-formulas.md
   - references/layer3-propagation.md
-  - references/rx-absence.md
-  - references/rx-void.md
-  - references/rx-reference.md
-  - references/rx-emotion.md
-  - references/rx-peak.md
-  - references/rx-repetition.md
-  - references/domain-universal.md
-  - references/subdomain-adapters.md
-  - references/v3t-decay-model.md
-  - references/cross-domain-matrix.md
-  - references/subdomain-full-matrix.md
-  - references/l2l3-delay-model.md
-  - references/triple-hybrid-matrix.md
-  - references/e-propagation-model.md
-  - references/fandom-acceleration.md
-  - references/multi-channel-propagation.md
-  - references/irr-calibration.md
-  - references/zm-correction-model.md
   - references/domain-routing.md
   - references/execution-guide.md
   - references/report-template.md
