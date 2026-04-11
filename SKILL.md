@@ -12,17 +12,27 @@ description: |
   - references/layer2-formulas.md
   - references/layer3-propagation.md
   - references/domain-routing.md
+  - references/domain-universal.md
   - references/execution-guide.md
   - references/report-template.md
+  - references/subdomain-adapters.md
+  - references/subdomain-full-matrix.md
+  - references/cross-domain-matrix.md
+  - references/triple-hybrid-matrix.md
+  - references/e-propagation-model.md
+  - references/fandom-acceleration.md
+  - references/multi-channel-propagation.md
+  - references/irr-calibration.md
+  - references/l2l3-delay-model.md
+  - references/v3t-decay-model.md
+  - references/zm-correction-model.md
+  - references/rx-absence.md
+  - references/rx-emotion.md
+  - references/rx-peak.md
+  - references/rx-reference.md
+  - references/rx-repetition.md
+  - references/rx-void.md
 ---
-
-<!-- Trigger Conditions (moved from description for token compression)
-P1: 히트스킬, hit skill, 히트패턴, 히트 분석, 자극설계, 인간메커니즘, 히트변환, 히트진단.
-P2: 히트스킬 통과, 히트 관점으로, 히트시키려면, 반응하게 만들어, 강하게 작동하게.
-P3: hit pattern, human mechanism, stimulus design, propagation structure.
-P5: 진단해줘, 설계해줘, 변환해줘, 리라이팅해줘, 분석해줘.
-NOT: 일반리서치(→research-frame), 재무모델(→financial-model), UI설계(→ui-action-designer).
--->
 
 # Hit Skill — 히트 패턴 아키텍처 변환 엔진
 
