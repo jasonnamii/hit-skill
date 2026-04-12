@@ -6,7 +6,7 @@ description: |
   P2: 히트스킬 통과, 히트 관점으로, 반응하게 만들어, 변환해줘, 진단해줘.
   P3: hit pattern, human mechanism, stimulus design, propagation structure.
   P5: 진단결과로, 설계안으로, 변환결과로.
-  NOT: 일반리서치(→research-frame), 재무모델(→financial-model), UI설계(→ui-action-designer).
+  NOT: 일반리서치(→research-frame), 재무모델(→financial-model), UI설계(→ui-action-designer), 순수 행동인과분석·예측(→human-skill).
 "@uses":
   - references/layer1-mechanism.md
   - references/layer2-formulas.md
