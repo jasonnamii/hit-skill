@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "skill": "hit-skill",
+  "cases": [
+    {
+      "id": "case_01_mode_diagnose",
+      "purpose": "완성된 산출물 입력 → 진단 모드 자동판별 + 근거인용 준수",
+      "input": "첨부한 카피를 봐줘. '무료 체험 14일, 해지 언제든' 이 헤드라인이 영 약한 것 같은데.",
+      "expected": {
+        "mode": "진단",
+        "mode_trigger": "완성된 작업물 존재 ('무료 체험 14일' 인용 가능)",
+        "required_spokes_min": ["references/domain-routing.md"],
+        "must_include": ["근거 인용(구체 단어)", "강점 Top 3", "약점(킬러 우선)", "처방카드", "V 위반 경고"],
+        "must_avoid": ["일반론", "스포크 전체 로드"]
+      }
+    },
+    {
+      "id": "case_02_mode_design",
+      "purpose": "목표·고민만 입력 → 설계 모드 + L3 우선 분기 작동 여부",
+      "input": "정치 캠페인 슬로건 만들어야 하는데, 어떻게 해야 퍼질까?",
+      "expected": {
+        "mode": "설계",
+        "mode_trigger": "산출물 없음, '어떻게 만들어야' 명시",
+        "l3_priority_branch": true,
+        "branch_reason": "범용 도메인(정치)·L3 축 2+ 강활성 가능성",
+        "must_include": ["L1 공략 2~3개", "L2 공식+V체크", "L3 전파+시대정신", "프리모르템"],
+        "required_spokes_min": ["references/layer3-propagation.md", "references/domain-universal.md"]
+      }
+    },
+    {
+      "id": "case_03_mode_transform",
+      "purpose": "초안+변환 의도 입력 → 변환 모드 + 활성 rx만 로드",
+      "input": "이 카피를 히트 관점에서 바꿔줘: '우리 제품은 빠르고 정확합니다.'",
+      "expected": {
+        "mode": "변환",
+        "mode_trigger": "초안 존재 + '바꿔줘'",
+        "must_include": ["변환 포인트", "처방카드 적용", "Before/After", "V 체크"],
+        "report_layer_rule": "분석 해설은 3층 접힘(`> [!info]- 변환 설계 원리`)",
+        "load_limit": "활성 rx만. 비활성 rx 로드 = FAIL",
+        "required_spokes_min": ["references/report-template.md", "rx-* 중 활성 1~2개"]
+      }
+    }
+  ],
+  "validation_criteria": {
+    "pass": "3건 중 3건 모두 expected 충족",
+    "warn": "2건 통과 + 1건 부분 충족",
+    "fail": "1건 이하 통과 또는 load_limit 위반"
+  }
+}
