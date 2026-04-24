@@ -147,6 +147,17 @@ python scripts/domain_router.py --spokes L1 공식① E전파
 
 → **`references/report-template.md` 로드** (3층 구조 정의 + 2층 서사 규칙 + 모드별 차이 + .md 템플릿)
 
+
+### 🚨 MUST cascade → paper-engine (절대규칙)
+
+**리포트 산출 = paper-engine 허브 MUST 경유.** 이 스킬 단독 md/html 출력 = FAIL.
+
+- **진입점:** §4.5(또는 §3.5/§Phase 6) 리포트 변환 직후 paper-engine 발동
+- **paper-engine이 결정:** MODE_S/M/L · NYT구조 · 3패스삭제 · 4항밀도QC · design-skill cascade
+- **산출 포맷:** 기본 **순수 md** (div·style ✗). 사용자가 "HTML로·박스로·벤토로·시각화·카드로" 명시시에만 예외
+- **위반 감지:** md 파일에 `<div style>`·`<span style>` 삽입 = FAIL → 재작성
+
+
 ---
 
 ## §5~§7. 프리모르템 + 시너지맵 + 정량모델 + Gotchas
