@@ -148,9 +148,17 @@ python scripts/domain_router.py --spokes L1 공식① E전파
 → **`references/report-template.md` 로드** (3층 구조 정의 + 2층 서사 규칙 + 모드별 차이 + .md 템플릿)
 
 
-### 🚨 MUST cascade → paper-engine
-모든 산출물 paper-engine MUST 경유. → `paper-engine/references/_common/cascade-must.md`
+### 🚨 MUST cascade → paper-engine (절대규칙)
 
+**리포트 산출 = paper-engine 허브 MUST 경유.** 이 스킬 단독 md/html 출력 = FAIL.
+
+- **진입점:** §4.5(또는 §3.5/§Phase 6) 리포트 변환 직후 paper-engine 발동
+- **paper-engine이 결정:** MODE_S/M/L · NYT구조 · 3패스삭제 · 4항밀도QC · design-skill cascade
+- **산출 포맷:** 기본 **순수 md** (div·style ✗). 사용자가 "HTML로·박스로·벤토로·시각화·카드로" 명시시에만 예외
+- **위반 감지:** md 파일에 `<div style>`·`<span style>` 삽입 = FAIL → 재작성
+
+
+---
 
 ## §5~§7. 프리모르템 + 시너지맵 + 정량모델 + Gotchas
 
@@ -164,9 +172,17 @@ python scripts/domain_router.py --spokes L1 공식① E전파
 ---
 
 
-## §INV NO_WORK_LABEL
-산출물·대화 작업 라벨 ZERO. → `paper-engine/references/no-work-label.md`
+## §INV NO_WORK_LABEL (산출물·대화 본질 보호)
 
+| 항목 | 정의 |
+|------|------|
+| RULE | 산출물·대화 = 인간 언어. 작업 라벨 ZERO. (1만 페이지 1단어 = FAIL) |
+| 판정 | "이 단어, 이 대화 밖 사람이 사전 없이 읽을 수 있나?" NO → 작업 라벨 → 금지 |
+| ALLOW | 업계 전문용어(CTR·CTA·UX·NPS·바이럴) · 고유명사(밈·브랜드 사례) · 법조문 |
+| CONVERT | 라벨 발견 → 실명·평문 풀어쓰기. 예) "3층 아키텍처(인간메커니즘·자극설계·전파구조)·진단·설계·변환 3모드" → 결과만 노출(층 라벨 ✗·내용만) |
+| SELF_CHECK | 진단·설계·변환 결과물 출력 직전에서 자체 스캔. 1개라도 발견 = 차단·재작성. paper-engine cascade 경유 시 INV 13 자동 적용 |
+
+---
 
 ## Gotchas (허브 요약)
 
