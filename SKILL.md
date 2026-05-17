@@ -39,7 +39,29 @@ description: |
 
 인간이 왜 반응하는지(L1), 무엇을 어떻게 던져야 하는지(L2), 왜 퍼지는지(L3)의 3층 프레임워크를 적용하여 작업물·고민·초안을 변환하는 실행 도구.
 
+
+## Skill Boundaries
+
+- **하는 것** — 히트 패턴 아키텍처 3층(인간메커니즘·자극설계·전파구조) 기반 범용 변환 엔진.
+- **안 하는 것** — 일반리서치(→research-skill), 재무모델(→financial-model), UI설계(→ui-designer), 순수 행동인과분석·예측(→human-skill), 카피생성(→copywriting-skill).
+
 ---
+
+## When to Use
+
+- 사용자가 "히트스킬 통과", "히트 관점으로", "반응하게 만들어", "변환해줘", "진단해줘" 같은 표현으로 발동
+- 콘텐츠·기획·제품이 반응을 못 얻을 때, 바이럴 설계가 필요할 때, 캠페인 히트 전략 수립시.
+- **안 쓸 때** — 일반리서치(→research-skill), 재무모델(→financial-model), UI설계(→ui-designer), 순수 행동인과분석·예측(→human-skill), 카피생성(→copywriting-skill).
+
+
+## Prerequisites
+
+| # | 체크 | 미충족 시 |
+|---|------|-----------|
+| 1 | 대상·입력 명확 (스킬 발동 의도 확인) | 1줄 확인 후 진입 |
+| 2 | references/ 폴더 접근 가능 | inline fallback |
+| 3 | scripts/ 실행 권한 | 권한 보정 후 재시도 |
+
 
 ## ⛔ 절대 규칙
 
@@ -185,7 +207,46 @@ python scripts/domain_router.py --spokes L1 공식① E전파
 
 ---
 
-## Gotchas (허브 요약)
+## Output Path
+
+| 산출물 | 경로 |
+|---|---|
+| 주 산출물 | `mnt/outputs/hit-skill_{topic}_{YYYY-MM-DD}.md` |
+| 형식 | 진단결과로, 설계안으로, 변환결과로, .md로. |
+| 리서치 결과 (해당 시) | `{VAULT}/_skills research/hit-skill/{YYYY-MM-DD}_{topic}.md` |
+
+## Reference Index
+
+| 파일 | 내용 | 언제 |
+|---|---|---|
+| `references/cross-domain-matrix.md` | cross domain matrix | 해당 단계 진입 시 |
+| `references/domain-routing.md` | domain routing | 해당 단계 진입 시 |
+| `references/domain-universal.md` | domain universal | 해당 단계 진입 시 |
+| `references/e-propagation-model.md` | e propagation model | 해당 단계 진입 시 |
+| `references/execution-guide.md` | execution guide | 해당 단계 진입 시 |
+| `references/fandom-acceleration.md` | fandom acceleration | 해당 단계 진입 시 |
+| `references/irr-calibration.md` | irr calibration | 해당 단계 진입 시 |
+| `references/l2l3-delay-model.md` | l2l3 delay model | 해당 단계 진입 시 |
+| `references/layer1-mechanism.md` | layer1 mechanism | 해당 단계 진입 시 |
+| `references/layer2-formulas.md` | layer2 formulas | 해당 단계 진입 시 |
+| `references/layer3-propagation.md` | layer3 propagation | 해당 단계 진입 시 |
+| `references/multi-channel-propagation.md` | multi channel propagation | 해당 단계 진입 시 |
+| `references/post-doctor-notes.md` | post doctor notes | 해당 단계 진입 시 |
+| `references/report-template.md` | report template | 해당 단계 진입 시 |
+| `references/rx-absence.md` | rx absence | 해당 단계 진입 시 |
+
+
+## Next Phase
+
+본 스킬 작업 후 자연스럽게 이어지는 흐름:
+
+- 후속 작업 → `research-skill`
+- 후속 작업 → `financial-model`
+- 후속 작업 → `ui-designer`
+- 후속 작업 → `human-skill`
+- 후속 작업 → `copywriting-skill`
+
+## Failure Modes (Gotchas) (허브 요약)
 
 | 함정 | 원인 → 결과 |
 |------|------------|
@@ -194,3 +255,11 @@ python scripts/domain_router.py --spokes L1 공식① E전파
 | 스포크 전체 로드 | 컨텍스트 오염·토큰 폭식 → 핵심 스포크 신호 약화 |
 
 → 상세 16건 안티패턴: `references/execution-guide.md`
+
+
+## ❌ WRONG vs ✅ CORRECT
+
+```
+❌ WRONG: 트리거 단어만 보고 발동 — 본질·범위 확인 ✗ → 오발동·범위 이탈
+✅ CORRECT: Skill Boundaries·When to Use 확인 후 발동 → 본질 작업만 수행
+```
