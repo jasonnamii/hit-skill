@@ -1,38 +1,7 @@
 ---
 name: hit-skill
 description: |
-  히트 패턴 아키텍처 3층(인간메커니즘·자극설계·전파구조) 기반 범용 변환 엔진. 진단·설계·변환 3모드. 작업물을 통과시키면 히트패턴이 반영된 결과물로 탈바꿈.
-    P1: 히트스킬, hit skill, 히트패턴, 히트분석, 자극설계, 인간메커니즘, 히트변환, 히트진단, 반응설계, 전파구조, 바이럴설계, 히트공식, 반응공식, 주목설계, 히트콘텐츠, 바이럴콘텐츠, 반응콘텐츠, 히트마케팅, 히트기획, 히트제품, 히트캠페인, 히트카피.
-    P2: 히트스킬 통과, 히트 관점으로, 반응하게 만들어, 변환해줘, 진단해줘, 히트시켜줘, 바이럴되게 해줘, 반응 오게 해줘, hit this, make it viral, 주목받게 해줘.
-    P3: hit pattern, human mechanism, stimulus design, propagation structure, viral design, attention engineering, behavioral trigger.
-    P4: 콘텐츠·기획·제품이 반응을 못 얻을 때, 바이럴 설계가 필요할 때, 캠페인 히트 전략 수립시.
-    P5: 진단결과로, 설계안으로, 변환결과로, .md로.
-    NOT: 일반리서치(→research-skill), 재무모델(→financial-model), UI설계(→ui-designer), 순수 행동인과분석·예측(→human-skill), 카피생성(→copywriting-skill).
-"@uses":
-  - references/layer1-mechanism.md
-  - references/layer2-formulas.md
-  - references/layer3-propagation.md
-  - references/domain-routing.md
-  - references/domain-universal.md
-  - references/execution-guide.md
-  - references/report-template.md
-  - references/subdomain-adapters.md
-  - references/subdomain-full-matrix.md
-  - references/cross-domain-matrix.md
-  - references/triple-hybrid-matrix.md
-  - references/e-propagation-model.md
-  - references/fandom-acceleration.md
-  - references/multi-channel-propagation.md
-  - references/irr-calibration.md
-  - references/l2l3-delay-model.md
-  - references/v3t-decay-model.md
-  - references/zm-correction-model.md
-  - references/rx-absence.md
-  - references/rx-emotion.md
-  - references/rx-peak.md
-  - references/rx-reference.md
-  - references/rx-repetition.md
-  - references/rx-void.md
+  히트 패턴 아키텍처 3층(인간메커니즘·자극설계·전파구조) 기반 범용 변환 엔진. 진단·설계·변환 3모드. 작업물을 통과시키면 히트패턴이 반영된 결과물로 탈바꿈. 트리거: 히트스킬, hit skill, 히트패턴, 히트분석, 자극설계, 인간메커니즘, 히트변환, 히트진단, 반응설계, 전파구조, 바이럴설계, 히트공식, 반응공식, 주목설계, 히트콘텐츠, 바이럴콘텐츠, 반응콘텐츠, 히트마케팅, 히트기획, 히트제품, 히트캠페인, 히트카피, 히트스킬 통과. NOT: 일반리서치(→research-skill), 재무모델(→financial-model), UI설계(→ui-designer), 순수 행동인과분석·예측(→human-skill), 카피생성(→copywriting-skill).
 ---
 
 # Hit Skill — 히트 패턴 아키텍처 변환 엔진
